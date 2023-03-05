@@ -9,9 +9,13 @@ Initially the thread counter is 0
 
 ![3](https://user-images.githubusercontent.com/111547793/222956787-1f0cc912-65af-4a8d-90d8-9481e2827870.png)
 
+Now the thread counter is 2. The counter is incremented onRestart() as we switch between main activity and activity B. 
+
 ![4](https://user-images.githubusercontent.com/111547793/222956795-62fdcacc-cc17-433d-86ac-47972d0ee716.png)
 
 ![5](https://user-images.githubusercontent.com/111547793/222956801-7c980bdc-5eeb-4a7c-ae2b-1776733a2826.png)
+
+Counter Remains same when a dialog activity is invoked.
 
 ![6](https://user-images.githubusercontent.com/111547793/222956806-63a7372d-2dd6-4ce4-ae2e-b0366a9f95a4.png)
 
