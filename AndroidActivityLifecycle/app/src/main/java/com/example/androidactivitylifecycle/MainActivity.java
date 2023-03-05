@@ -6,10 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
     int threadCounter = 0;
 
     @Override
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
         TextView threadCounterText = findViewById(R.id.thread_counter_txt);
         threadCounterText.setText("ThreadCounter: " + String.valueOf(threadCounter));
+        String msg = threadCounterText.getText().toString();
+        Log.v(TAG,msg);
     }
 
     public void onStartActivityB (View view) {

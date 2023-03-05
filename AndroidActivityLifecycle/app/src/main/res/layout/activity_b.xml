@@ -14,7 +14,7 @@
         android:layout_marginTop="129dp"
         android:layout_marginEnd="179dp"
         android:layout_marginBottom="53dp"
-        android:text="ActivityB"
+        android:text="Activity B"
         app:layout_constraintBottom_toTopOf="@+id/onFinishActivityB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,6 +29,7 @@
         android:layout_marginBottom="482dp"
         android:onClick="onFinishActivityB"
         android:text="Finish Activity B"
+        android:background="@color/red"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
