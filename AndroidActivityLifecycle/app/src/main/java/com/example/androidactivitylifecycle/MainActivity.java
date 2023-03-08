@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
-    int threadCounter = 0;
+    public static  int threadCounter=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,14 +21,38 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onStart() {
+        super.onStart();
+    }
+    @Override
     protected void onRestart() {
         super.onRestart();
         threadCounter += 1;
 
+        String message = "Thread counter in MainActivity onRestart is: "+ String.valueOf(threadCounter);
+        Log.v(TAG,message);
         TextView threadCounterText = findViewById(R.id.thread_counter_txt);
         threadCounterText.setText("ThreadCounter: " + String.valueOf(threadCounter));
-        String msg = threadCounterText.getText().toString();
-        Log.v(TAG,msg);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 
     public void onStartActivityB (View view) {
@@ -39,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     public void onTriggerDialog (View view) {
         new AlertDialog.Builder(this)
                 .setTitle("Dialog")
-                .setMessage("This is a dialog!!!")
+                .setMessage("This is a Dialog!!!")
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {}
                 })
@@ -47,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onCloseApp (View view) {
+        threadCounter = 0;
         finish();
         System.exit(0);
     }

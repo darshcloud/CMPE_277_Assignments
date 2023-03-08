@@ -9,4 +9,7 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="main_activity_label">MAIN ACTIVITY</string>
+    <string name="activity_b_label">ACTIVITY B</string>
+    <string name="activity_b_message">Activity B occupies the complete window real-estate. The Android OS forces Activity A to be Paused. However, the background thread keeps incrementing the counter...</string>
 </resources>
