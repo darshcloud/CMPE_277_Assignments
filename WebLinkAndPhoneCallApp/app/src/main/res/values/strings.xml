@@ -2,9 +2,12 @@
     <string name="app_name">WebLinkAndPhoneCallApp</string>
     <string name="mact_lbl_url">URL :</string>
     <string name="mact_lbl_phone">Phone :</string>
+    <string name="mact_lbl_message">Text :</string>
     <string name="mact_btn_launch">Launch</string>
     <string name="mact_btn_ring">Ring</string>
-    <string name="mact_btn_close">Close App</string>
+    <string name="mact_btn_send">Text Send</string>
+    <string name="mact_btn_close">Close Application</string>
     <string name="mact_hint_phone">(XXX) XXX - XXXX</string>
-    <string name="mact_hint_url">https://sjsu.edu</string>
+    <string name="mact_hint_url">https://www.sjsu.edu/</string>
+    <string name="mact_hint_message">Enter the Text To Send</string>
 </resources>

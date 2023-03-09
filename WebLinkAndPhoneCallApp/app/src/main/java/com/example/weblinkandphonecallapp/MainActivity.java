@@ -4,13 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.service.autofill.RegexValidator;
 import android.telephony.PhoneNumberUtils;
+import android.telephony.SmsManager;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -18,6 +21,7 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
     private static final int CALL_PHONE_PERMISSION=100;
+    private static final int SEND_SMS_PERMISSION=100;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
         if(callPhonePerm!=PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this,new String[]{android.Manifest.permission.CALL_PHONE},CALL_PHONE_PERMISSION);
         }
+        int sendSMSPerm = ContextCompat.checkSelfPermission(this, android.Manifest.permission.SEND_SMS);
+        if(sendSMSPerm!=PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.SEND_SMS}, SEND_SMS_PERMISSION);
+        }
+
     }
 
     @Override
@@ -84,7 +93,22 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
         else{
-            Toast.makeText(this, "Please Enter a valid phone number", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please Enter a Valid Phone Number", Toast.LENGTH_SHORT).show();
         }
     }
+
+    public void openChat(View view){
+        EditText urlEditText = (EditText) findViewById(R.id.editTextPhone);
+        String phoneNumber = urlEditText.getText().toString();
+        EditText editText = (EditText) findViewById(R.id.editMessage);
+        String message = editText.getText().toString();
+        if(PhoneNumberUtils.isGlobalPhoneNumber(phoneNumber)){
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms", phoneNumber, null));
+            intent.putExtra("sms_body",message);
+            startActivity(intent);
+        }else{
+            Toast.makeText(this, "Please Enter a Valid Phone Number to send text message", Toast.LENGTH_SHORT).show();
+        }
+    }
+
 }
