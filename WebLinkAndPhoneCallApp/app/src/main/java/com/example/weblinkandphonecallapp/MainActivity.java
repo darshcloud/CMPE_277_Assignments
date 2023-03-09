@@ -11,13 +11,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.service.autofill.RegexValidator;
 import android.telephony.PhoneNumberUtils;
-import android.telephony.SmsManager;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
     private static final int CALL_PHONE_PERMISSION=100;
@@ -107,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("sms_body",message);
             startActivity(intent);
         }else{
-            Toast.makeText(this, "Please Enter a Valid Phone Number to send text message", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please Enter a Valid Phone Number to send Text Message", Toast.LENGTH_SHORT).show();
         }
     }
 
