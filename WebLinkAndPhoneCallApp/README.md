@@ -2,34 +2,46 @@
 
 Build Project Successful
 
-![1](https://user-images.githubusercontent.com/111547793/222993821-387e281e-fdaa-4069-a1d1-3b232f91f782.png)
+![1](https://user-images.githubusercontent.com/111547793/224143078-c6e45138-930c-4021-8d03-08024b4144f8.png)
 
-App Successfully Launched
+App Launched successfully
 
-![2](https://user-images.githubusercontent.com/111547793/222993829-c4c18f1d-6fab-4281-be0e-610f6bb757ac.png)
+![2](https://user-images.githubusercontent.com/111547793/224143179-ac7e6738-3cae-4c66-93d5-b22ea2b1e5cd.png)
 
-![3](https://user-images.githubusercontent.com/111547793/222993837-88731aa2-d766-4f75-9698-a2546e3a372b.png)
+URL: https://www.google.com 
 
-URL entered: https://www.google.com 
+![3](https://user-images.githubusercontent.com/111547793/224143212-11cb917a-de08-4f51-bd4e-08387df5eeb1.png)
 
-![4](https://user-images.githubusercontent.com/111547793/222993842-25a19b78-0bcd-4655-8391-7457d76e2f5c.png)
+On click of launch entered website is launched as shown in the below screenshot
 
-On Click of launch button the website is launched successfully as shown in the screenshot below
+![4](https://user-images.githubusercontent.com/111547793/224143255-5f163090-a1d6-4aec-a70f-4e88b2882c63.png)
 
-![5](https://user-images.githubusercontent.com/111547793/222993847-a70d7cc9-2068-461d-b80e-4fe425f9a237.png)
+Enter a Phone Number
 
-Enter the phone number
+![5](https://user-images.githubusercontent.com/111547793/224143285-fcb3e614-a633-411d-aab5-b39f39cd4312.png)
 
-![6](https://user-images.githubusercontent.com/111547793/222993856-46a5eb80-5fc3-40b8-a404-7fa9bbb0409b.png)
+On click of Ring button A call has been placed to the entered phone number
 
-On click of ring button, call to the entered the phone number has been placed
+![6](https://user-images.githubusercontent.com/111547793/224143311-d9d09607-3408-414f-ac74-aca890453be6.png)
 
-![7](https://user-images.githubusercontent.com/111547793/222993858-afbade75-d136-447d-a345-224d199cd7e1.png)
+Enter the text to be sent
 
-Close Application
+![7](https://user-images.githubusercontent.com/111547793/224143330-63bac903-f3f1-4b5f-824f-5546d846afff.png)
 
-![8](https://user-images.githubusercontent.com/111547793/222993859-133325d2-f18f-4c40-bc45-bf63d52c171a.png)
+On click of text send button message has been sent as shown in the screenshot below
 
-Logs
+![8](https://user-images.githubusercontent.com/111547793/224143342-e8485946-8de3-4884-ad40-fb6a5102ddfe.png)
 
-![9](https://user-images.githubusercontent.com/111547793/222993860-1c0d3f98-1df6-43c5-8671-0ad5d41fa00a.png)
+On click of Close Application button application is closed
+
+![9](https://user-images.githubusercontent.com/111547793/224143361-56fb74a2-1e9e-4e4a-9e9e-6a1f2a8631b0.png)
+
+Application Logs
+
+![10](https://user-images.githubusercontent.com/111547793/224143368-68479c4a-cdc1-4c08-a5cf-61d1786c29dd.png)
+
+![11](https://user-images.githubusercontent.com/111547793/224143393-f0c4e856-6ee2-4ff8-90b3-25c5cc0086c0.png)
+
+
+
+
